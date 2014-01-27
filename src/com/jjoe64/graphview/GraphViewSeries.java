@@ -60,7 +60,7 @@ public class GraphViewSeries {
 
 	final String description;
 	final GraphViewSeriesStyle style;
-	GraphViewDataInterface[] values;
+	public GraphViewDataInterface[] values;
 	private final List<GraphView> graphViews = new ArrayList<GraphView>();
 
 	public GraphViewSeries(GraphViewDataInterface[] values) {
