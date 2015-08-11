@@ -1042,11 +1042,13 @@ abstract public class GraphView extends LinearLayout
 	 * @param max
 	 * @param min
 	 */
-	public void setManualYAxisBounds(double max, double min)
+	synchronized public void setManualYAxisBounds(double max, double min)
 	{
 		manualMaxYValue = max;
 		manualMinYValue = min;
 		manualYAxis = true;
+		
+		postInvalidate();
 	}
 
 	/**

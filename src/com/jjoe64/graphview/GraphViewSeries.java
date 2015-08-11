@@ -206,4 +206,12 @@ public class GraphViewSeries
 			g.redrawAll();
 		}
 	}
+	
+	public void setMinMax(double min, double max)
+	{
+		for (GraphView g : graphViews)
+		{
+			g.setManualYAxisBounds(max, min);
+		}
+	}
 }
